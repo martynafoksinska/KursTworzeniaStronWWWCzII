@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background-color: #444;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link.active {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #039dff;
+}
+
+.fa-bars {
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #fff;
+}
+
+.active {
+  color: #039dff;
+}/*# sourceMappingURL=main.css.map */
