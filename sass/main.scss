@@ -8,6 +8,10 @@
 	padding: 0;
 }
 
+html {
+	scroll-padding-top: 82px;
+}
+
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
@@ -135,6 +139,14 @@ header {
 	.aboutus-card-text {
 		font-size: 14px;
 	}
+
+	.about-us-hover {
+		transition: color .3s;
+	}
+
+	.about-us-hover:hover {
+		color: $main-color;
+	}
 }
 
 @media (min-width: 375px) {
@@ -160,6 +172,10 @@ header {
 		}
 	}
 }
+
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 72px;
 
 @media (min-width: 1200px) {
 	header {
