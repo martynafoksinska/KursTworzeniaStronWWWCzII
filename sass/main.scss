@@ -239,6 +239,14 @@ header {
 	.price-box:hover {
 		transform: scale(1.05);
 	}
+
+	.price-info {
+		margin-top: 30px;
+
+		a {
+			text-decoration: none;
+		}
+	}
 }
 
 @media (min-width: 375px) {
@@ -272,6 +280,12 @@ header {
 
 	.aboutus-hero {
 		background-image: url('../img/technology_big.jpg');
+	}
+
+	.prices {
+		.price-info {
+			font-size: 18px;
+		}
 	}
 }
 

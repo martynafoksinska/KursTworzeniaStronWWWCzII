@@ -204,6 +204,12 @@ header .fa-chevron-down {
 .prices .price-box:hover {
   transform: scale(1.05);
 }
+.prices .price-info {
+  margin-top: 30px;
+}
+.prices .price-info a {
+  text-decoration: none;
+}
 
 @media (min-width: 375px) {
   header h1 {
@@ -227,6 +233,9 @@ header .fa-chevron-down {
   }
   .aboutus-hero {
     background-image: url("../img/technology_big.jpg");
+  }
+  .prices .price-info {
+    font-size: 18px;
   }
 }
 @media (min-width: 1200px) {
