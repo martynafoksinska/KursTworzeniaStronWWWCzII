@@ -13,7 +13,7 @@ html {
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  background-color: #444;
+  background-color: #ebecf2;
 }
 
 h2 {
@@ -39,13 +39,16 @@ h2 {
 nav {
   text-transform: uppercase;
   transition: background-color 0.6s;
-  z-index: 1;
+  z-index: 10;
 }
 nav .nav-link {
   color: #fff;
 }
-nav .nav-link.active {
-  color: #fff;
+nav .nav-link.active a {
+  color: #039dff !important;
+}
+nav .active {
+  color: #039dff !important;
 }
 
 .nav-link:hover {
@@ -138,7 +141,7 @@ header .fa-chevron-down {
   background-position: center;
   background-size: cover;
   color: #ddd;
-  z-index: 1;
+  z-index: -10;
 }
 .aboutus-hero .aboutus-shadow {
   position: absolute;
@@ -155,6 +158,51 @@ header .fa-chevron-down {
 }
 .aboutus-hero .aboutus-hero-item .aboutus-hero-title {
   font-size: 24px;
+}
+
+.portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+.prices .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.prices .price-box h3 {
+  color: #039dff;
+  text-transform: uppercase;
+}
+.prices .price-box span {
+  font-weight: bold;
+}
+.prices .price-box i {
+  padding: 0 5px;
+  font-size: 24px;
+}
+.prices .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.prices .price-box .price-tag {
+  font-size: 30px;
+  font-weight: bold;
+}
+.prices .price-box:hover {
+  transform: scale(1.05);
 }
 
 @media (min-width: 375px) {
@@ -174,8 +222,8 @@ header .fa-chevron-down {
   }
 }
 @media (min-width: 992px) {
-  html {
-    scroll-padding-top: 72px;
+  nav {
+    height: 82px;
   }
   .aboutus-hero {
     background-image: url("../img/technology_big.jpg");

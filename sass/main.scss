@@ -15,7 +15,7 @@ html {
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #444;
+	background-color: $bg-color;
 }
 
 h2 {
@@ -41,14 +41,20 @@ h2 {
 nav {
 	text-transform: uppercase;
 	transition: background-color 0.6s;
-	z-index: 1;
+	z-index: 10;
 
 	.nav-link {
 		color: $white;
 	}
 
 	.nav-link.active {
-		color: $white;
+		a {
+			color: $main-color !important;
+		}
+	}
+
+	.active {
+		color: $main-color !important;
 	}
 }
 
@@ -155,7 +161,7 @@ header {
 	background-position: center;
 	background-size: cover;
 	color: $light-gray;
-	z-index: 1;
+	z-index: -10;
 
 	.aboutus-shadow {
 		position: absolute;
@@ -175,6 +181,63 @@ header {
 		.aboutus-hero-title {
 			font-size: 24px;
 		}
+	}
+}
+
+.portfolio {
+	.carousel-item {
+		position: relative;
+		height: 600px;
+	}
+
+	.carousel-caption {
+		position: absolute;
+		left: 0;
+		right: 0;
+		padding: 40px 0;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	.carousel-indicators {
+		padding-bottom: 20px;
+	}
+}
+
+.prices {
+	.price-box {
+		margin: 20px 10px;
+		padding: 30px;
+		background-color: $white;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		transition: transform 0.3s;
+
+		h3 {
+			color: $main-color;
+			text-transform: uppercase;
+		}
+
+		span {
+			font-weight: bold;
+		}
+
+		i {
+			padding: 0 5px;
+			font-size: 24px;
+		}
+
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
+
+		.price-tag {
+			font-size: 30px;
+			font-weight: bold;
+		}
+	}
+
+	.price-box:hover {
+		transform: scale(1.05);
 	}
 }
 
@@ -203,8 +266,8 @@ header {
 }
 
 @media (min-width: 992px) {
-	html {
-		scroll-padding-top: 72px;
+	nav {
+		height: 82px;
 	}
 
 	.aboutus-hero {
