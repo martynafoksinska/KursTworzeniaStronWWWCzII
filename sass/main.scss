@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'animation';
 
 *,
 *::before,
@@ -289,11 +290,88 @@ header {
 		margin-bottom: 20px;
 		text-align: center;
 		text-transform: uppercase;
-		
 	}
 
 	.card-body {
 		height: 250px;
+	}
+}
+
+.achievements {
+	i {
+		padding: 10px;
+		font-size: 48px;
+		color: $white;
+		text-shadow: 0 0 5px #000;
+	}
+
+	.achievements-list {
+		padding: 20px 0;
+	}
+
+	.achievement-number {
+		font-size: 22px;
+	}
+
+	.achievement-text {
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+}
+
+.contact {
+	position: relative;
+	background-image: url('../img/skyline-1869214_1920.jpg');
+	background-position: bottom;
+	background-attachment: fixed;
+	background-color: cover;
+	z-index: 0;
+
+	h2 {
+		color: $light-gray;
+		font-weight: bold;
+	}
+
+	.underline {
+		background-color: $light-gray;
+	}
+
+	.contact-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 9, 27, 0.65);
+		z-index: -5;
+	}
+
+	.contact-us {
+		display: flex;
+		align-content: center;
+		color: $white;
+
+		.contact-item {
+			margin: 30px 0;
+
+			h3 {
+				margin-bottom: 15px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+
+			.social-media {
+				font-size: 26px;
+				a {
+					padding: 10px;
+					color: $white;
+				}
+
+				a:hover {
+					color: $light-gray;
+
+				}
+			}
+		}
 	}
 }
 
