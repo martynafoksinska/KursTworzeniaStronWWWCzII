@@ -270,7 +270,7 @@ header {
 	}
 
 	.card {
-		transition: transform .3s;
+		transition: transform 0.3s;
 		img {
 			height: 300px;
 			object-fit: cover;
@@ -282,13 +282,18 @@ header {
 	}
 
 	.card:hover {
-		transform: scale(.96);
+		transform: scale(0.96);
 	}
 
 	.card-title {
 		margin-bottom: 20px;
 		text-align: center;
 		text-transform: uppercase;
+		
+	}
+
+	.card-body {
+		height: 250px;
 	}
 }
 

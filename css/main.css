@@ -248,6 +248,9 @@ header .fa-chevron-down {
   text-align: center;
   text-transform: uppercase;
 }
+.team .card-body {
+  height: 250px;
+}
 
 @media (min-width: 375px) {
   header h1 {
