@@ -1,4 +1,5 @@
 .bounce-top {
+  display: block;
   -webkit-animation: bounce-top 2s infinite both;
           animation: bounce-top 2s infinite both;
 }
@@ -207,9 +208,6 @@ header .fa-chevron-down {
 }
 .aboutus .aboutus-card-text {
   font-size: 14px;
-}
-.aboutus .about-us-hover {
-  transition: color 0.3s;
 }
 .aboutus .about-us-hover:hover {
   color: #039dff;
